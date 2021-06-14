@@ -1,24 +1,7 @@
-import Response from './repository/response';
+import axios from 'axios';
 
-export function post(text: string, user: object): Promise<Response> {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({
-        data: {
-          token:
-            '91j893h281h9nf98fnf2309jd09jkkd0as98238j9fr8j98f9j8f298r829r-f',
-          user: {
-            email: "teste@front.com",
-            password: "teste123"
-          },
-        },
-      });
-    }, 2000);
-  });
-}
+const api = axios.create({
+    baseURL: 'http://jrwee.mocklab.io'
+});
 
-export const defaults = {
-  headers: {
-    Authorization: ''
-  },
-};
+export default api;

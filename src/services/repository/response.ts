@@ -1,9 +1,7 @@
 export default interface Response {
-    data: {
-      user: {
-        email: string;
-        password: string;
-      };
-      token: string;
-    };
+  data: {
+    email: string;
+    password: string;
+  };
+  token: string;
 }

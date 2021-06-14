@@ -1,6 +1,6 @@
 import React from 'react';
 import ComponentButtonProps from './repository/buttonInterface';
-import { UseAuth } from '../../../contexts/useAuth';
+import { UseAuth } from '@/contexts/useAuth';
 
 const ButtonLogOut: React.FC<ComponentButtonProps> = ({ value }) => {
     const { signed, Logout } = UseAuth();
